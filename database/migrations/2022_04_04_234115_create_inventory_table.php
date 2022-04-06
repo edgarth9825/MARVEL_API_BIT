@@ -19,7 +19,7 @@ class CreateInventoryTable extends Migration
             $table->string('name_comic');
             $table->timestamps();
             
-            $table->foreign('sucursal_id')->references('id_sucursales')->on('sucursales');
+            $table->foreign('sucursal_id')->references('id_sucursales')->on('sucursales')->onDelete('cascade');
         });
     }
 
