@@ -17,7 +17,7 @@ class CreateSucursalesTable extends Migration
             $table->id('id_sucursales');
             $table->string('name');
             $table->string('location');
-            $table->integer('phone');
+            $table->bigInteger('phone');
             $table->timestamps();
         });
     }
